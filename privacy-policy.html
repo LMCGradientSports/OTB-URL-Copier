@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – OTB URL Copier</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1720;
+      --surface: #17232f;
+      --border: #1e3448;
+      --accent: #3b82f6;
+      --accent-dim: rgba(59,130,246,0.12);
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --mono: 'IBM Plex Mono', monospace;
+      --sans: 'IBM Plex Sans', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 80px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      background: var(--accent-dim);
+      border: 1px solid rgba(59,130,246,0.25);
+      border-radius: 4px;
+      padding: 4px 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: var(--mono);
+      font-size: 28px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      font-family: var(--mono);
+      margin-bottom: 48px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #94a3b8;
+    }
+
+    .card p + p {
+      margin-top: 12px;
+    }
+
+    .highlight {
+      background: var(--accent-dim);
+      border-left: 2px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.65;
+    }
+
+    .highlight strong {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 48px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    footer span {
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="badge">Chrome Extension</div>
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">OTB URL Copier &nbsp;·&nbsp; Last updated May 2026</p>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <p>OTB URL Copier is a Chrome extension that adds a one-click copy button to event bars on Gradient Sports. When clicked, it copies a transformed version of the event URL to your clipboard.</p>
+      <p>This extension is operated privately and is not affiliated with Gradient Sports.</p>
+    </div>
+
+    <div class="card">
+      <h2>Data Collection</h2>
+      <p>This extension collects <strong style="color:#fff">no personal data whatsoever</strong>.</p>
+      <div class="highlight">
+        <strong>What it does:</strong> Reads the <code style="font-family:var(--mono);font-size:13px">href</code> attribute from event bar links on <code style="font-family:var(--mono);font-size:13px">soccer-dat.gradientsports.com</code> and writes a transformed URL to your clipboard.<br><br>
+        <strong>What it does not do:</strong> No data is collected, stored, logged, transmitted, or shared — with us or any third party. Nothing ever leaves your device.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Permissions</h2>
+      <p>The extension requests the following permissions:</p>
+      <div class="highlight" style="margin-top:12px">
+        <strong>Host access to soccer-dat.gradientsports.com</strong><br>
+        Required to inject the copy button into the page UI and read event link URLs.
+      </div>
+      <div class="highlight">
+        <strong>Clipboard write</strong><br>
+        Required to copy the transformed URL to your clipboard when you click the button.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Third Parties</h2>
+      <p>This extension does not use any analytics, tracking, advertising, or third-party services of any kind.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>If you have any questions about this privacy policy, please open an issue on the extension's GitHub repository or contact the developer directly.</p>
+    </div>
+
+    <footer>
+      OTB URL Copier &nbsp;<span>·</span>&nbsp; Private Chrome Extension<br>
+      This policy applies to version 1.0 and above
+    </footer>
+
+  </div>
+</body>
+</html>
